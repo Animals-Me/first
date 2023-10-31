@@ -1,0 +1,47 @@
+<html>
+<head>
+<style type="text/css"><!--
+.STYLE1 {color: #669900;font-weight: bold;font-size: 14px;}
+.STYLE2 {color: #6699FF;font-size: 14px;font-weight: bold;}
+.STYLE3 {font-size: 14px;color: #666666;}
+.STYLE4 {font-size: 14px;color: #FF6600;}
+.STYLE5 {font-size: 14px;color: #FFD700;}
+.STYLE6 {font-size: 14px;color: #FF0000;}--></style>
+</head><body>
+<font class="STYLE1">#include</font> <iostream><br>
+using <font class="STYLE2">namespace</font> std;<br>
+<font class=STYLE4>
+/*实现冒泡排序:重复地走访过要排序的元素列，依次比较两个相邻的元素，如果顺序（如从大到小、首字母从Z到A）错误就把他们交换过来。*/</font>
+<br>
+<br>
+<font class="STYLE2">int</font> main<font class="STYLE5">(</font><font class="STYLE5">)</font> <font class="STYLE5">{</font><br>
+    <font class="STYLE2">int</font> arr<font class="STYLE5">[</font>10<font class="STYLE5">]</font>;<br>
+    <font class="STYLE2">for</font> <font class="STYLE5">(</font><font class="STYLE2">int</font> i <font class="STYLE6">=</font> 0; i < 10; i<font class="STYLE6">++</font><font class="STYLE5">)</font> <font class="STYLE5">{</font><br>
+        cin >> arr<font class="STYLE5">[</font>i<font class="STYLE5">]</font>; <font class="STYLE3">// 输入数组元素
+</font><br>
+    <font class="STYLE5">}</font><br>
+<br>
+    <font class="STYLE3">// 冒泡排序
+</font><br>
+    <font class="STYLE2">for</font> <font class="STYLE5">(</font><font class="STYLE2">int</font> i <font class="STYLE6">=</font> 0; i < 9; i<font class="STYLE6">++</font><font class="STYLE5">)</font> <font class="STYLE5">{</font> <font class="STYLE3">// 外层循环控制排序轮数
+</font><br>
+        <font class="STYLE2">for</font> <font class="STYLE5">(</font><font class="STYLE2">int</font> j <font class="STYLE6">=</font> 0; j < 9 <font class="STYLE6">-</font> i; j<font class="STYLE6">++</font><font class="STYLE5">)</font> <font class="STYLE5">{</font> <font class="STYLE3">// 内层循环控制每轮比较次数
+</font><br>
+            <font class="STYLE2">if</font> <font class="STYLE5">(</font>arr<font class="STYLE5">[</font>j<font class="STYLE5">]</font> > arr<font class="STYLE5">[</font>j <font class="STYLE6">+</font> 1<font class="STYLE5">]</font><font class="STYLE5">)</font> <font class="STYLE5">{</font> <font class="STYLE3">// 如果前一个元素大于后一个元素，交换它们的位置
+</font><br>
+                <font class="STYLE2">int</font> temp <font class="STYLE6">=</font> arr<font class="STYLE5">[</font>j<font class="STYLE5">]</font>;<br>
+                arr<font class="STYLE5">[</font>j<font class="STYLE5">]</font> <font class="STYLE6">=</font> arr<font class="STYLE5">[</font>j <font class="STYLE6">+</font> 1<font class="STYLE5">]</font>;<br>
+                arr<font class="STYLE5">[</font>j <font class="STYLE6">+</font> 1<font class="STYLE5">]</font> <font class="STYLE6">=</font> temp;<br>
+            <font class="STYLE5">}</font><br>
+        <font class="STYLE5">}</font><br>
+    <font class="STYLE5">}</font><br>
+<br>
+    <font class="STYLE2">cout</font> << <font class="STYLE4">"排序后的数组为："</font>;<br>
+    <font class="STYLE2">for</font> <font class="STYLE5">(</font><font class="STYLE2">int</font> i <font class="STYLE6">=</font> 0; i < 10; i<font class="STYLE6">++</font><font class="STYLE5">)</font> <font class="STYLE5">{</font><br>
+        <font class="STYLE2">cout</font> << arr<font class="STYLE5">[</font>i<font class="STYLE5">]</font> << <font class="STYLE4">" "</font>; <font class="STYLE3">// 输出排序后的数组
+</font><br>
+    <font class="STYLE5">}</font><br>
+    <font class="STYLE2">cout</font> << <font class="STYLE2">endl</font>;<br>
+<br>
+    <font class="STYLE2">return</font> 0;<br>
+<font class="STYLE5">}</font></body></html>
